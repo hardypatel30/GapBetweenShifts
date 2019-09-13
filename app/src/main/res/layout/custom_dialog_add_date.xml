@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Select Date : "/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txtStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DD//MM//YYYY"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Start Time: "/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txtStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HH:MM AM"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="End Time: "/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/txtEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" HH:MM AM"
+            />
+        </LinearLayout>
+        <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Add"/>
+
+    </LinearLayout>
+</layout>
